@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --select-border: #393939;
+  --select-focus: #101484;
+  --select-arrow: var(--select-border);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #80afa7;
+}
+
+.header {
+  width: 330px;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(
+    to bottom,
+    #033a24,
+    #034d34,
+    #085a43,
+    #06614c,
+    #077c67
+  );
+  border-radius: 1rem 1rem 0 0;
+  border-top: 1px solid #f7f7f7;
+  border-left: 1px solid #f7f7f7;
+  border-right: 1px solid #f7f7f7;
+  border-bottom: 1px solid #034d34;
+}
+.header i {
+  font-size: 4rem;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+}
+.header p {
+  font-size: 0.9rem;
+  padding-bottom: 8px;
+}
+.container {
+  width: 330px;
+  padding: 35px;
+  background-image: linear-gradient(
+    to top,
+    #033a24,
+    #034d34,
+    #085a43,
+    #06614c,
+    #077c67
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border-bottom: 1px solid #f7f7f7;
+  border-left: 1px solid #f7f7f7;
+  border-right: 1px solid #f7f7f7;
+}
+.currency {
+  width: 330px;
+  padding: 0px 30px;
+}
+.currency input {
+  width: 100%;
+  margin-top: 12px;
+  outline: 0;
+  appearance: 0;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 10px;
+  background: rgb(241, 219, 219);
+  color: #000;
+  font-size: 1rem;
+}
+
+select {
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 40%;
+  padding: 8px 0;
+  background: #053f34;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #12ebc3;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 20px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  background: #12ebc3;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
